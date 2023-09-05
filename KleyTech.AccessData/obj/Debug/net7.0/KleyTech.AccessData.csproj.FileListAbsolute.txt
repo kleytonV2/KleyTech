@@ -1,0 +1,14 @@
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\bin\Debug\net7.0\KleyTech.AccessData.deps.json
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\bin\Debug\net7.0\KleyTech.AccessData.runtimeconfig.json
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\bin\Debug\net7.0\KleyTech.AccessData.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\bin\Debug\net7.0\KleyTech.AccessData.pdb
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.csproj.AssemblyReference.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.AssemblyInfoInputs.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.AssemblyInfo.cs
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\refint\KleyTech.AccessData.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.pdb
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\KleyTech.AccessData.genruntimeconfig.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.AccessData\obj\Debug\net7.0\ref\KleyTech.AccessData.dll

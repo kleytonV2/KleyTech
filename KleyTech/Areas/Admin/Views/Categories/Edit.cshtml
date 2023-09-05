@@ -1,0 +1,44 @@
+﻿@model KleyTech.Models.Category
+
+@{
+    ViewData["Title"] = "Editar categorias";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Editar categoría</h3>
+
+<form method="POST" asp-action="Edit">
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Name"></label>
+                </label>
+                <input asp-for="Name" class="form-control" placeholder="Set the name of the category" />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Order"></label>
+                </label>
+                <input asp-for="Order" class="form-control" placeholder="Set the name of the visualization order" />
+                <span asp-validation-for="Order" class="text-danger" />
+            </div>
+
+            <div class="form-group row mt-4">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Id">Actualizar</button>
+                </div>
+                <div class="col">
+                    <a asp-action="Index" class="btn btn-success form-control">Volver a la lista</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
