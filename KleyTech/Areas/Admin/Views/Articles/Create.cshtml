@@ -1,0 +1,66 @@
+﻿@model KleyTech.Models.ViewModels.ArticleVM
+
+@{
+    ViewData["Title"] = "Create articles";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Create new article</h3>
+
+<form method="POST" asp-action="Create" enctype="multipart/form-data">
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.Name"></label>
+                </label>
+                <input asp-for="Article.Name" class="form-control" placeholder="Set the name of the article" />
+                <span asp-validation-for="Article.Name" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.Description"></label>
+                </label>
+                <textarea asp-for="Article.Description" class="form-control" placeholder="Set the description of the article" rows="4" ></textarea>
+                <span asp-validation-for="Article.Description" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label for="Category">Category</label>
+                </label>
+                @Html.DropDownListFor(m => m.Article.CategoryId, Model.CategoryList,
+                    "Choose category" , new {@class = "form-control"})
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.ImageURL"></label>
+                </label>
+                <input type="file" name="Files" id="uploadFiles" class="form-control" />
+            </div>
+
+            <div class="form-group row mt-4">
+                <partial name="_ViewCreateAndReturn" />
+            </div>
+
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins:'lists',
+            menubar:'file edit format'
+        });
+
+    </script>
+}

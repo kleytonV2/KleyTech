@@ -14,7 +14,7 @@ namespace KleyTech.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The name of the article is required")]
-        [Display(Name = "Name of category")]
+        [Display(Name = "Name of article")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "The descrption is required")]
