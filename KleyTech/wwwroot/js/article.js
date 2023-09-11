@@ -15,7 +15,7 @@ function cargarDatatable() {
         "columns": [
             { "data": "id", "width": "5%" },
             { "data": "name", "width": "25%" },
-            { "data": "category", "width": "15%" },
+            { "data": "category.name", "width": "15%" },
             { "data": "creationDate", "width": "15%" },
             {
                 "data": "id",

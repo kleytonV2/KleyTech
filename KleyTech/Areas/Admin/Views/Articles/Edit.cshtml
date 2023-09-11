@@ -1,0 +1,80 @@
+﻿@model KleyTech.Models.ViewModels.ArticleVM
+
+@{
+    ViewData["Title"] = "Edit articles";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Edit new article</h3>
+
+<form asp-action="Edit" enctype="multipart/form-data">
+
+    <input type="hidden" asp-for="Article.Id" />
+
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-8 mt-4">
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.Name"></label>
+                </label>
+                <input asp-for="Article.Name" class="form-control" placeholder="Set the name of the article" />
+                <span asp-validation-for="Article.Name" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.Description"></label>
+                </label>
+                <textarea asp-for="Article.Description" class="form-control" placeholder="Set the description of the article" rows="4"></textarea>
+                <span asp-validation-for="Article.Description" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label for="Category">Category</label>
+                </label>
+                @Html.DropDownListFor(m => m.Article.CategoryId, Model.CategoryList,
+                "Choose category" , new {@class = "form-control"})
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Article.ImageURL"></label>
+                </label>
+                <input type="file" name="Files" id="uploadFiles" class="form-control" />
+            </div>
+
+            <div class="form-group row mt-4">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Article.Id">Upadte</button>
+                </div>
+                <div class="col">
+                    <a asp-action="Index" class="btn btn-success form-control">Return</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4 pt-3">
+            <img src="@Model.Article.ImageURL" width="100%" style="border-radius:5px;border:1px solid #bbb9b9;" />
+        </div>
+
+
+    </div>
+</form>
+
+@section Scripts{
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format'
+        });
+
+    </script>
+}

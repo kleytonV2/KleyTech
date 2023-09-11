@@ -13,12 +13,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\157a42fb-1b54-4b26-93b6-1bba401f1cce.PNG",
-      "PackagePath": "staticwebassets\\images\\articles\\157a42fb-1b54-4b26-93b6-1bba401f1cce.PNG"
-    },
-    {
-      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\edabe051-52d7-4600-a794-e29118b3947f.PNG",
-      "PackagePath": "staticwebassets\\images\\articles\\edabe051-52d7-4600-a794-e29118b3947f.PNG"
+      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG",
+      "PackagePath": "staticwebassets\\images\\articles\\0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG"
     },
     {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\article.js",
@@ -31,6 +27,10 @@
     {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\slider.js",
+      "PackagePath": "staticwebassets\\js\\slider.js"
     },
     {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\lib\\bootstrap\\LICENSE",

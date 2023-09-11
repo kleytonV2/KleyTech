@@ -11,8 +11,7 @@ namespace KleyTech.DataAccess.Data.Repository.IRepository
 
         ICategoryRepository Category { get; }
         IArticleRepository Article { get; }
-
-        //We have to add the differents repositories here
+        ISliderRepository Slider { get; }
 
         void Save();
     }

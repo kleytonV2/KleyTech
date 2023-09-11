@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0NIgsWt0MIehN/vrSn78gVaIK6vehCB4f3P82uov4gE=",
+  "Hash": "gZt1z5i2Nk0TK514ZKy0AxnzY7kCv3YIFJqNHBpMSFs=",
   "Source": "KleyTech",
   "BasePath": "_content/KleyTech",
   "Mode": "Default",
@@ -1105,12 +1105,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\157a42fb-1b54-4b26-93b6-1bba401f1cce.PNG",
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG",
       "SourceId": "KleyTech",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
       "BasePath": "_content/KleyTech",
-      "RelativePath": "images/articles/157a42fb-1b54-4b26-93b6-1bba401f1cce.PNG",
+      "RelativePath": "images/articles/0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,24 +1119,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\articles\\157a42fb-1b54-4b26-93b6-1bba401f1cce.PNG"
-    },
-    {
-      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\articles\\edabe051-52d7-4600-a794-e29118b3947f.PNG",
-      "SourceId": "KleyTech",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
-      "BasePath": "_content/KleyTech",
-      "RelativePath": "images/articles/edabe051-52d7-4600-a794-e29118b3947f.PNG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\articles\\edabe051-52d7-4600-a794-e29118b3947f.PNG"
+      "OriginalItemSpec": "wwwroot\\images\\articles\\0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG"
     },
     {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\article.js",
@@ -1188,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\slider.js",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "js/slider.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\slider.js"
     },
     {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

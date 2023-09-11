@@ -1,0 +1,50 @@
+﻿@model KleyTech.Models.Slider 
+
+@{
+    ViewData["Title"] = "Create sliders";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Create new slider</h3>
+
+<form method="POST" asp-action="Create" enctype="multipart/form-data">
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group row">
+                        <label class="col-4">
+                            <label asp-for="Name"></label>
+                        </label>
+                        <input asp-for="Name" class="form-control" placeholder="Set the name of the slider" />
+                        <span asp-validation-for="Name" class="text-danger" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="flex-end">
+                            <label asp-for="Status"></label>
+                        </label>
+                        <input type="checkbox" asp-for="Status" class="form-check flex-end" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="ImageUrl"></label>
+                </label>
+                <input type="file" name="Files" id="uploadFiles" class="form-control" />
+            </div>
+
+            <div class="form-group row mt-4">
+                <partial name="_ViewCreateAndReturn" />
+            </div>
+
+        </div>
+    </div>
+</form>
