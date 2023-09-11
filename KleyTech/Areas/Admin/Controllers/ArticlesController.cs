@@ -103,10 +103,12 @@ namespace KleyTech.Areas.Admin.Controllers
                     var uploads = Path.Combine(MainRoute, @"images\articles");
                     var nuevaExtension = Path.GetExtension(files[0].FileName);
 
-                    var imageRoute = Path.Combine(MainRoute, articleFromDB.ImageURL.TrimStart('\\'));
-                    if (System.IO.File.Exists(imageRoute))
-                    {
-                        System.IO.File.Delete(imageRoute);
+                    if (articleFromDB.ImageURL != null) {
+                        var imageRoute = Path.Combine(MainRoute, articleFromDB.ImageURL.TrimStart('\\'));
+                        if (System.IO.File.Exists(imageRoute))
+                        {
+                            System.IO.File.Delete(imageRoute);
+                        }
                     }
 
                     using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))

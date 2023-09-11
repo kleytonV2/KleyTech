@@ -1,0 +1,58 @@
+﻿@model KleyTech.Models.Slider
+
+@{
+    ViewData["Title"] = "Edit sliders";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Edit new slider</h3>
+
+<form asp-action="Edit" enctype="multipart/form-data">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-8 mt-4">
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="Name"></label>
+                </label>
+                <input asp-for="Name" class="form-control" placeholder="Set the name of the slider" />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+
+            <div class="form-group row">
+                <label class="col-4">
+                    <label asp-for="ImageUrl"></label>
+                </label>
+                <input type="file" name="Files" id="uploadFiles" class="form-control" />
+            </div>
+
+            <div class="form-group row mt-4">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Id">Update</button>
+                </div>
+                <div class="col">
+                    <a asp-action="Index" class="btn btn-success form-control">Return</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4 pt-3">
+            <img src="@Model.ImageUrl" width="100%" style="border-radius:5px;border:1px solid #bbb9b9;" />
+        </div>
+
+
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} 

@@ -15,7 +15,16 @@ function cargarDatatable() {
         "columns": [
             { "data": "id", "width": "5%" },
             { "data": "name", "width": "25%" },
-            { "data": "status", "width": "15%" },
+            {
+                "data": "status", "width": "15%",
+                "render": function (currentStatus) {
+                    if (currentStatus == true) {
+                        return "Active"
+                    } else {
+                        return "Inactive"
+                    }
+                }
+            },
             {
                 "data": "id",
                 "render": function (data) {

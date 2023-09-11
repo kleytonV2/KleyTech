@@ -13,10 +13,11 @@ namespace KleyTech.Models
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "The name of the slider is required")]
-        [Display(Name = "Name of the slider")]
+        [Display(Name = "Title")]
         public string Name { get; set; }
-        [Display(Name = "Slider active")]
+        [Display(Name = "Active")]
         public bool Status { get; set; }
+        [Display(Name = "Image")]
         [DataType(DataType.ImageUrl)]
         public string ImageUrl { get; set; }
     }

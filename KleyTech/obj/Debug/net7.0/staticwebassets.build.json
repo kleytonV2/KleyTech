@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gZt1z5i2Nk0TK514ZKy0AxnzY7kCv3YIFJqNHBpMSFs=",
+  "Hash": "GqdU5fA2oa1njgeZTPpbvxhLsb3vrT6lWzldF67mewQ=",
   "Source": "KleyTech",
   "BasePath": "_content/KleyTech",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\articles\\0cee9e46-937b-46ec-b300-5eb2eeb7e711.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\sliders\\76552a56-1eab-4666-a7ca-31ede9c86a12.jpg",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "images/sliders/76552a56-1eab-4666-a7ca-31ede9c86a12.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sliders\\76552a56-1eab-4666-a7ca-31ede9c86a12.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\sliders\\be7029d9-d275-4a0a-b9de-85d0e1082862.jpg",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "images/sliders/be7029d9-d275-4a0a-b9de-85d0e1082862.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sliders\\be7029d9-d275-4a0a-b9de-85d0e1082862.jpg"
     },
     {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\article.js",

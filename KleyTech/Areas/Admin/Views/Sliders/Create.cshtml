@@ -25,11 +25,11 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="form-group">
-                        <label class="flex-end">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label">
                             <label asp-for="Status"></label>
                         </label>
-                        <input type="checkbox" asp-for="Status" class="form-check flex-end" />
+                        <input type="checkbox" asp-for="Status" class="form-check-input form-switch me-2" checked="checked" />
                     </div>
                 </div>
             </div>
@@ -48,3 +48,9 @@
         </div>
     </div>
 </form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} 
