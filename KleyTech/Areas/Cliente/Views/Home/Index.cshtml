@@ -1,8 +1,29 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model KleyTech.Models.ViewModels.HomeVM 
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row mt-1">
+    <div class="col-sm-12">
+        <h1 class="text-center text-white py-1 bg-gradient" style="background-color: darkgrey;">Last courses and tutorials</h1>
+    </div>
 </div>
+
+@if(Model.ArticleList.Count() > 0){
+    <hr/>
+    <div class="row">
+        @foreach (var article in Model.ArticleList.OrderBy(o=>o.Id))
+        {
+            <div class="col-4">
+                <div class="card">
+                    <img src="@article.ImageURL" class="img-thumbnail" width="100%">
+                    <div class="card-body">
+                        <h5 class="text-center">@article.Name</h5>
+                        <a asp-action="Details" class="btn btn-success" style="border-radius:2px" asp-route-id="@article.Id">
+                            More information
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}else{
+    <p>There are no articles</p>
+}

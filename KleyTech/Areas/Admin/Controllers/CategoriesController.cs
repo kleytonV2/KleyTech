@@ -10,12 +10,12 @@ namespace KleyTech.Areas.Admin.Controllers
     public class CategoriesController : Controller
     {
         private readonly IWorkContainer _workContainer;
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
 
         public CategoriesController(IWorkContainer workContainer,ApplicationDbContext context)
         {
             _workContainer = workContainer;
-            _context = context;
+            //_context = context;
         }
 
         [HttpGet]
