@@ -24,6 +24,7 @@ namespace KleyTech.DataAccess.Data.Repository
             var dbObject = _db.Sliders.FirstOrDefault(i => i.Id == slider.Id);
             dbObject.Name = slider.Name;
             dbObject.ImageUrl = slider.ImageUrl;
+            dbObject.Status = slider.Status;
 
             //_db.SaveChanges();
         }
