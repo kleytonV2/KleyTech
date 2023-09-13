@@ -22,15 +22,7 @@ namespace KleyTech.Areas.Cliente.Controllers
                 Slider = _workContainer.Slider.GetAll(),
                 ArticleList = _workContainer.Article.GetAll()
             };
-
-            ViewBag.IsHome = true;
-
             return View(homeVM);
-        }
-
-        public IActionResult Details(int id)
-        {
-            return View(_workContainer.Article.Get(id));
         }
 
         public IActionResult Privacy()
