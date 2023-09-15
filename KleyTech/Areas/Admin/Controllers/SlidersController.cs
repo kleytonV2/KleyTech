@@ -64,7 +64,7 @@ namespace KleyTech.Areas.Admin.Controllers
             }
 
             return View(slider);
-            
+
         }
 
         [HttpGet]
@@ -96,7 +96,8 @@ namespace KleyTech.Areas.Admin.Controllers
                     var extension = Path.GetExtension(files[0].FileName);
                     var uploads = Path.Combine(MainRoute, @"images\sliders");
 
-                    if (sliderFromDB.ImageUrl.Length > 0) {
+                    if (sliderFromDB.ImageUrl.Length > 0)
+                    {
                         var imageRoute = Path.Combine(MainRoute, sliderFromDB.ImageUrl.TrimStart('\\'));
                         if (System.IO.File.Exists(imageRoute))
                         {
@@ -142,7 +143,7 @@ namespace KleyTech.Areas.Admin.Controllers
             var sliderFromDb = _workContainer.Slider.Get(id);
             string imageMainRoute = _webHostEnvironment.WebRootPath;
             if (sliderFromDb.ImageUrl != null)
-            { 
+            {
                 var imageRoute = Path.Combine(imageMainRoute, sliderFromDb.ImageUrl.TrimStart('\\'));
                 if (System.IO.File.Exists(imageRoute))
                 {

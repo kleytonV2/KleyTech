@@ -4,9 +4,9 @@ using KleyTech.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace KleyTech.Areas.Cliente.Controllers
+namespace KleyTech.Areas.User.Controllers
 {
-    [Area("Cliente")]
+    [Area("User")]
     public class HomeController : Controller
     {
         private readonly IWorkContainer _workContainer;
@@ -18,11 +18,20 @@ namespace KleyTech.Areas.Cliente.Controllers
 
         public IActionResult Index()
         {
-            HomeVM homeVM = new HomeVM() {
+            HomeVM homeVM = new HomeVM()
+            {
                 Slider = _workContainer.Slider.GetAll(),
                 ArticleList = _workContainer.Article.GetAll()
             };
+
+            ViewBag.IsHome = true;
+
             return View(homeVM);
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(_workContainer.Article.Get(id));
         }
 
         public IActionResult Privacy()

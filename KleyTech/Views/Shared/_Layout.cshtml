@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -21,7 +22,7 @@
 
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand text-white" asp-area="Cliente" asp-controller="Home" asp-action="Index">KleyTech</a>
+                <a class="navbar-brand text-white" asp-area="User" asp-controller="Home" asp-action="Index">KleyTech</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,6 +43,11 @@
                 <partial name="_LoginPartial" />
             </div>
         </nav>
+
+        @if (ViewBag.IsHome == true)
+        {
+            <partial name="_Slider" />
+        }
 
     </header>
     <div class="container">

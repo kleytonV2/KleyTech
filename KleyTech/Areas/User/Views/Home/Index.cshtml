@@ -6,10 +6,11 @@
     </div>
 </div>
 
-@if(Model.ArticleList.Count() > 0){
-    <hr/>
+@if (Model.ArticleList.Count() > 0)
+{
+    <hr />
     <div class="row">
-        @foreach (var article in Model.ArticleList.OrderBy(o=>o.Id))
+        @foreach (var article in Model.ArticleList.OrderBy(o => o.Id))
         {
             <div class="col-4">
                 <div class="card">
@@ -24,6 +25,8 @@
             </div>
         }
     </div>
-}else{
+}
+else
+{
     <p>There are no articles</p>
 }
