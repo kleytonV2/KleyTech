@@ -84,15 +84,6 @@ namespace KleyTech.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required(ErrorMessage = "The Name is required")]
-            public string Name { get; set; }
-            [Required(ErrorMessage = "The Direction is required")]
-            public string Address { get; set; }
-            [Required(ErrorMessage = "The City is required")]
-            public string City { get; set; }
-            [Required(ErrorMessage = "The Country is required")]
-            public string Country { get; set; }
-
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -111,6 +102,19 @@ namespace KleyTech.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            //CUSTOM FIELDS
+            [Required(ErrorMessage = "The Name is required")]
+            public string Name { get; set; }
+            [Required(ErrorMessage = "The Direction is required")]
+            public string Address { get; set; }
+            [Required(ErrorMessage = "The phone number is required")]
+            [Display(Name = "Phone number")]
+            public string PhoneNumber { get; set; }
+            [Required(ErrorMessage = "The City is required")]
+            public string City { get; set; }
+            [Required(ErrorMessage = "The Country is required")]
+            public string Country { get; set; }
         }
 
 
@@ -130,6 +134,7 @@ namespace KleyTech.Areas.Identity.Pages.Account
 
                 user.Name = Input.Name;
                 user.Address = Input.Address;
+                user.PhoneNumber = Input.PhoneNumber;
                 user.City = Input.City;
                 user.Country = Input.Country;
 
