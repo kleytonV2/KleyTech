@@ -2,11 +2,15 @@
 using KleyTech.DataAccess.Data.Repository.IRepository;
 using KleyTech.Models;
 using KleyTech.Models.ViewModels;
+using KleyTech.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Packaging.Signing;
+using System.Data;
 
 namespace KleyTech.Areas.Admin.Controllers
 {
+    [Authorize(Roles = CNT.Admin)]
     [Area("Admin")]
     public class SlidersController : Controller
     {

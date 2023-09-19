@@ -1,11 +1,15 @@
 ﻿using KleyTech.Data;
 using KleyTech.DataAccess.Data.Repository.IRepository;
 using KleyTech.Models;
+using KleyTech.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
+using System.Data;
 
 namespace KleyTech.Areas.Admin.Controllers
 {
+    [Authorize(Roles = CNT.Admin)]
     [Area("Admin")]
     public class CategoriesController : Controller
     {
