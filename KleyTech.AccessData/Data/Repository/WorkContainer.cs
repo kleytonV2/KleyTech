@@ -16,16 +16,16 @@ namespace KleyTech.DataAccess.Data.Repository
         public WorkContainer(ApplicationDbContext db)
         {
             _db = db;
+            Header = new HeaderRepository(_db);
             Category = new CategoryRepository(_db);
             Article = new ArticleRepository(_db);
             Slider = new SliderRepository(_db);
             User = new UserRepository(_db);
         }
 
+        public IHeaderRepository Header { get; private set; }
         public ICategoryRepository Category { get; private set; }
-
         public IArticleRepository Article { get; private set; }
-
         public ISliderRepository Slider { get; private set; }
         public IUserRepository User { get; private set; }
 

@@ -1,6 +1,7 @@
 ﻿using KleyTech.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.PortableExecutable;
 
 namespace KleyTech.Data
 {
@@ -15,6 +16,7 @@ namespace KleyTech.Data
         public DbSet<Article> Articles { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<Header> Headers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

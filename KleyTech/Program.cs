@@ -1,6 +1,8 @@
 using KleyTech.Data;
+using KleyTech.DataAccess;
 using KleyTech.DataAccess.Data.Repository;
 using KleyTech.DataAccess.Data.Repository.IRepository;
+using KleyTech.DataAccess.Initializer;
 using KleyTech.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +22,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IWorkContainer, WorkContainer>();
 
+//Seed data
+builder.Services.AddScoped<IInitializerDB, InitializerDB> ();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +39,8 @@ else
 }
 app.UseStaticFiles();
 
+SeedData();
+
 app.UseRouting();
 
 app.UseAuthorization();
@@ -43,3 +51,12 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
+
+void SeedData() {
+    using (var scope = app.Services.CreateScope())
+    {
+        var initializerDB = scope.ServiceProvider .GetRequiredService<IInitializerDB>();
+        initializerDB.Initialize();
+    }
+}

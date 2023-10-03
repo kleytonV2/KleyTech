@@ -20,3 +20,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+#adminPanel {
+    z-index: 100000 !important;
+}
+
+.btnAdminPanel {
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0 10px 10px 0;
+    top: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 10000 !important;
+}
+
+#btnAdminPanelOpen {
+    position: fixed;
+    left: 0;
+}
+
+#btnAdminPanelClose {
+    position: absolute;
+    right: -2rem;
+}

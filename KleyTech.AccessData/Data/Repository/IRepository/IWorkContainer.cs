@@ -13,6 +13,7 @@ namespace KleyTech.DataAccess.Data.Repository.IRepository
         IArticleRepository Article { get; }
         ISliderRepository Slider { get; }
         IUserRepository User { get; }
+        IHeaderRepository Header { get; }
 
         void Save();
     }

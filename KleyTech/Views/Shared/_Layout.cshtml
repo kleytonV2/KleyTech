@@ -29,7 +29,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
 
-                    @if (User.IsInRole(CNT.Admin))
+                    @*@if (User.IsInRole(CNT.Admin))
                     {
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item dropdown">
@@ -43,7 +43,8 @@
                                 </div>
                             </li>
                         </ul>
-                    }
+                    }*@
+                    
                     
                 </div>
                 <partial name="_LoginPartial" />
@@ -58,7 +59,37 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            
             @RenderBody()
+
+            @*Activo el panel de admin*@
+            @if (User.IsInRole(CNT.Admin))
+            {
+                <a id="btnAdminPanelOpen" class="btnAdminPanel" data-bs-toggle="offcanvas" data-bs-target="#adminPanel" aria-controls="adminPanel">
+                    <i class="fa-solid fa-pencil text-white"></i>
+                </a>
+
+                <div id="adminPanel" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="adminPanelLabel">
+                    <div class="offcanvas-header bg-light">
+                        <h4 class="offcanvas-title" id="adminPanelLabel">
+                            <i class="fa-solid fa-palette"></i> Administration
+                        </h4>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a class="btn btn-outline-primary w-100 mb-2" asp-area="Admin" asp-controller="Headers" asp-action="Index">Headers</a>
+                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Categories" asp-action="Index">Categories</a>
+                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Articles" asp-action="Index">Articles</a>
+                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Sliders" asp-action="Index">Sliders</a>
+                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Users" asp-action="Index">Users</a>
+                    </div>
+
+                    <a id="btnAdminPanelClose" class="btnAdminPanel" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-pencil text-white"></i>
+                    </a>
+                </div>
+                
+            }
         </main>
     </div>
 

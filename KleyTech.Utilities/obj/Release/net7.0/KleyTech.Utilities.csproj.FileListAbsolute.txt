@@ -1,0 +1,12 @@
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\bin\Release\net7.0\KleyTech.Utilities.deps.json
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\bin\Release\net7.0\KleyTech.Utilities.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\bin\Release\net7.0\KleyTech.Utilities.pdb
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.csproj.AssemblyReference.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.AssemblyInfoInputs.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.AssemblyInfo.cs
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\refint\KleyTech.Utilities.dll
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\KleyTech.Utilities.pdb
+C:\Users\kleyton\Documents\PROYECTOS\.NET\KleyTech\KleyTech.Utilities\obj\Release\net7.0\ref\KleyTech.Utilities.dll
