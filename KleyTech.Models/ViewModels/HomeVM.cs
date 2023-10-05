@@ -9,6 +9,7 @@ namespace KleyTech.Models.ViewModels
 {
     public class HomeVM
     {
+        public IEnumerable<Header> HeaderList {  get; set; }
         public IEnumerable<Slider> Slider {  get; set; }
         public IEnumerable<Article> ArticleList {  get; set; }
     }

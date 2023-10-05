@@ -136,7 +136,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Articles");
+                    b.ToTable("Articles", (string)null);
                 });
 
             modelBuilder.Entity("KleyTech.Models.Category", b =>
@@ -156,7 +156,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("KleyTech.Models.Header", b =>
@@ -168,9 +168,6 @@ namespace KleyTech.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreationDate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HTML_Class")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HTML_Id")
@@ -185,7 +182,30 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Headers");
+                    b.ToTable("Headers", (string)null);
+                });
+
+            modelBuilder.Entity("KleyTech.Models.PageClass", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PageClass", (string)null);
                 });
 
             modelBuilder.Entity("KleyTech.Models.Slider", b =>
@@ -208,7 +228,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

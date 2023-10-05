@@ -25,6 +25,15 @@ builder.Services.AddScoped<IWorkContainer, WorkContainer>();
 //Seed data
 builder.Services.AddScoped<IInitializerDB, InitializerDB> ();
 
+//Para utilizar el Session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 
 var app = builder.Build();
 
@@ -45,6 +54,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//Para utilizar el Session
+app.UseSession();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=User}/{controller=Home}/{action=Index}/{id?}");
@@ -60,3 +72,4 @@ void SeedData() {
         initializerDB.Initialize();
     }
 }
+

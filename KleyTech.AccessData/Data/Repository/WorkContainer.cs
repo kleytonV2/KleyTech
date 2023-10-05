@@ -16,6 +16,7 @@ namespace KleyTech.DataAccess.Data.Repository
         public WorkContainer(ApplicationDbContext db)
         {
             _db = db;
+            PageClass = new PageClassRepository(_db);
             Header = new HeaderRepository(_db);
             Category = new CategoryRepository(_db);
             Article = new ArticleRepository(_db);
@@ -28,8 +29,9 @@ namespace KleyTech.DataAccess.Data.Repository
         public IArticleRepository Article { get; private set; }
         public ISliderRepository Slider { get; private set; }
         public IUserRepository User { get; private set; }
+        public IPageClassRepository PageClass { get; private set; }
 
-        public void Dispose()
+    public void Dispose()
         {
             _db.Dispose();
         }

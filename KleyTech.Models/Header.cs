@@ -24,8 +24,8 @@ namespace KleyTech.Models
         [Display(Name = "Element Id")]
         public string HTML_Id { get; set; }
         
-        [Display(Name = "Class")]
-        public string HTML_Class { get; set; }
+        //[Display(Name = "Class")]
+        //public string HTML_Class { get; set; }
         
         [Display(Name = "Creation date")]
         public string CreationDate { get; set; }

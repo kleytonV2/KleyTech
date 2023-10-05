@@ -25,7 +25,6 @@ namespace KleyTech.DataAccess.Data.Repository
             dbObject.Name = header.Name;
             dbObject.LogoURL = header.LogoURL;
             dbObject.HTML_Id = header.HTML_Id;
-            dbObject.HTML_Class = header.HTML_Class;
 
             //_db.SaveChanges();
         }

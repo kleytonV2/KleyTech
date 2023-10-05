@@ -17,7 +17,7 @@ namespace KleyTech.Models
         [Display(Name = "Title")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "The descrption is required")]
+        [Required(ErrorMessage = "The description is required")]
         public string Description { get; set; }
 
         [Display(Name = "Creation date")]

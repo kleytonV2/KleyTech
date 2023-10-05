@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TUSVo7Tfz92TjPB0O2MIfRuJPS0r3MnJWoRk06fvDsQ=",
+  "Hash": "/ZJ02LTzx+/EF7IzNbfJhI6J+fX1umAXvVHG/R9DJwM=",
   "Source": "KleyTech",
   "BasePath": "_content/KleyTech",
   "Mode": "Default",
@@ -1139,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\images\\articles\\ac7e7178-932b-43c4-bb41-e51d2e1d47e2.jpg"
     },
     {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\headers\\ab7a4618-8b80-4c58-8f3a-9aedbf694cf7.png",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "images/headers/ab7a4618-8b80-4c58-8f3a-9aedbf694cf7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\headers\\ab7a4618-8b80-4c58-8f3a-9aedbf694cf7.png"
+    },
+    {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\sliders\\36cabddd-121a-41e7-9615-8e68ac33fa92.PNG",
       "SourceId": "KleyTech",
       "SourceType": "Discovered",
@@ -1256,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\category.js"
+    },
+    {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\page.js",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "js/page.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\page.js"
     },
     {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\site.js",

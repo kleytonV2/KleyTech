@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\articles\\ac7e7178-932b-43c4-bb41-e51d2e1d47e2.jpg"
     },
     {
+      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\headers\\ab7a4618-8b80-4c58-8f3a-9aedbf694cf7.png",
+      "PackagePath": "staticwebassets\\images\\headers\\ab7a4618-8b80-4c58-8f3a-9aedbf694cf7.png"
+    },
+    {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\images\\sliders\\36cabddd-121a-41e7-9615-8e68ac33fa92.PNG",
       "PackagePath": "staticwebassets\\images\\sliders\\36cabddd-121a-41e7-9615-8e68ac33fa92.PNG"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\category.js",
       "PackagePath": "staticwebassets\\js\\category.js"
+    },
+    {
+      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\page.js",
+      "PackagePath": "staticwebassets\\js\\page.js"
     },
     {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\site.js",

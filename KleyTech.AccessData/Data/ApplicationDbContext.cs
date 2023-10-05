@@ -17,6 +17,7 @@ namespace KleyTech.Data
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<Header> Headers { get; set; }
+        public DbSet<PageClass> PageClass { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

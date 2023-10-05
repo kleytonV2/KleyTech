@@ -3,6 +3,7 @@ using KleyTech.Models;
 using KleyTech.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Drawing.Imaging;
 
 namespace KleyTech.Areas.User.Controllers
 {
@@ -16,8 +17,22 @@ namespace KleyTech.Areas.User.Controllers
             _workContainer = workContainer;
         }
 
+        //[ActionName("ApproveSellers")]
         public IActionResult Index()
         {
+            if (HttpContext.Session != null) {
+                int? idPage = HttpContext.Session.GetInt32("idPage");
+                PageClass pageClass = _workContainer.PageClass.GetFirstOrDefault();
+                if (idPage == 0 && pageClass != null) {
+                    idPage = _workContainer.PageClass.GetFirstOrDefault().Id;
+                }
+
+                if (idPage > 0) { 
+            
+                }
+            
+            }
+
             HomeVM homeVM = new HomeVM()
             {
                 Slider = _workContainer.Slider.GetAll(),
