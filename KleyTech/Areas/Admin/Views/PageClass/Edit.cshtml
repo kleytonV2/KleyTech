@@ -59,10 +59,32 @@
         </div>
 
     </div>
+
+    @*Blocks*@
+    @*<div class="row">
+
+        <div class="col-12">
+
+            <table id="tblBlocks" class="table table-striped table-bordered" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Order</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+
+    </div>*@
 </form>
 
 @section Scripts{
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    @*<script src="~/js/block.js"></script>*@
 } 

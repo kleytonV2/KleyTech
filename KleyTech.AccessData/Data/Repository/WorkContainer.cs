@@ -17,6 +17,7 @@ namespace KleyTech.DataAccess.Data.Repository
         {
             _db = db;
             PageClass = new PageClassRepository(_db);
+            Block = new BlockRepository(_db);
             Header = new HeaderRepository(_db);
             Category = new CategoryRepository(_db);
             Article = new ArticleRepository(_db);
@@ -30,6 +31,7 @@ namespace KleyTech.DataAccess.Data.Repository
         public ISliderRepository Slider { get; private set; }
         public IUserRepository User { get; private set; }
         public IPageClassRepository PageClass { get; private set; }
+        public IBlockRepository Block { get; private set; }
 
     public void Dispose()
         {

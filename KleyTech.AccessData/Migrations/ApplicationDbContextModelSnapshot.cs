@@ -136,7 +136,37 @@ namespace KleyTech.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Articles", (string)null);
+                    b.ToTable("Articles");
+                });
+
+            modelBuilder.Entity("KleyTech.Models.Block", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("HTML_Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PageClassId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PageClassId");
+
+                    b.ToTable("Blocks");
                 });
 
             modelBuilder.Entity("KleyTech.Models.Category", b =>
@@ -156,7 +186,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("KleyTech.Models.Header", b =>
@@ -182,7 +212,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Headers", (string)null);
+                    b.ToTable("Headers");
                 });
 
             modelBuilder.Entity("KleyTech.Models.PageClass", b =>
@@ -205,7 +235,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PageClass", (string)null);
+                    b.ToTable("PageClass");
                 });
 
             modelBuilder.Entity("KleyTech.Models.Slider", b =>
@@ -228,7 +258,7 @@ namespace KleyTech.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders", (string)null);
+                    b.ToTable("Sliders");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -373,6 +403,17 @@ namespace KleyTech.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("KleyTech.Models.Block", b =>
+                {
+                    b.HasOne("KleyTech.Models.PageClass", "PageClass")
+                        .WithMany()
+                        .HasForeignKey("PageClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PageClass");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

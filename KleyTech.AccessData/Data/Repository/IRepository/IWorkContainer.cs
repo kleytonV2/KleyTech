@@ -15,6 +15,7 @@ namespace KleyTech.DataAccess.Data.Repository.IRepository
         IUserRepository User { get; }
         IHeaderRepository Header { get; }
         IPageClassRepository PageClass { get; }
+        IBlockRepository Block { get; }
 
         void Save();
     }

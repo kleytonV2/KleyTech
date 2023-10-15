@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\js\\article.js"
     },
     {
+      "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\block.js",
+      "PackagePath": "staticwebassets\\js\\block.js"
+    },
+    {
       "Id": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\category.js",
       "PackagePath": "staticwebassets\\js\\category.js"
     },

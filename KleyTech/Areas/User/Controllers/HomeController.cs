@@ -17,7 +17,6 @@ namespace KleyTech.Areas.User.Controllers
             _workContainer = workContainer;
         }
 
-        //[ActionName("ApproveSellers")]
         public IActionResult Index()
         {
             if (HttpContext.Session != null) {

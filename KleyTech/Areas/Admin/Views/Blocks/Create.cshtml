@@ -1,0 +1,70 @@
+﻿@model KleyTech.Models.Block
+
+@{
+    ViewData["Title"] = "Create block";
+}
+
+<br />
+<br />
+
+<h3 class="text-center">Create block</h3>
+
+<form method="POST" asp-action="Create" enctype="multipart/form-data">
+    <div class="row px-2 offset-1 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group row">
+                        <label class="col-4">
+                            <label asp-for="Name"></label>
+                        </label>
+                        <input asp-for="Name" class="form-control" placeholder="Set the name of the block" />
+                        <span asp-validation-for="Name" class="text-danger" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label">
+                            <label asp-for="Status"></label>
+                        </label>
+                        <input type="checkbox" asp-for="Status" class="form-check-input form-switch me-2" checked="checked" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group row">
+                    <label class="col-4">
+                        <label asp-for="HTML_Content"></label>
+                    </label>
+                    <textarea asp-for="HTML_Content" class="form-control" placeholder="Set the content of the block" rows="4"></textarea>
+                    <span asp-validation-for="HTML_Content" class="text-danger" />
+                </div>
+
+            </div>
+            
+            <div class="form-group row mt-4">
+                <partial name="_ViewCreateAndReturn" />
+            </div>
+
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format'
+        });
+
+    </script>
+} 

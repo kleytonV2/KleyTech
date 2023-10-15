@@ -18,6 +18,7 @@ namespace KleyTech.Data
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<Header> Headers { get; set; }
         public DbSet<PageClass> PageClass { get; set; }
+        public DbSet<Block> Blocks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

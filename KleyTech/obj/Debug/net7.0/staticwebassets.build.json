@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/ZJ02LTzx+/EF7IzNbfJhI6J+fX1umAXvVHG/R9DJwM=",
+  "Hash": "Ru9ahenEmTaZujbMWIgC2Tz6kZP+Fxl78zTpS2x2tYU=",
   "Source": "KleyTech",
   "BasePath": "_content/KleyTech",
   "Mode": "Default",
@@ -1256,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\article.js"
+    },
+    {
+      "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\block.js",
+      "SourceId": "KleyTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\",
+      "BasePath": "_content/KleyTech",
+      "RelativePath": "js/block.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\block.js"
     },
     {
       "Identity": "C:\\Users\\kleyton\\Documents\\PROYECTOS\\.NET\\KleyTech\\KleyTech\\wwwroot\\js\\category.js",
