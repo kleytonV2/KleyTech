@@ -22,6 +22,12 @@
 <body>
     <header @*id="@Model.HTML_Id"*@>
 
+        <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container">
                 
@@ -71,37 +77,12 @@
             @*Activo el panel de admin*@
             @if (User.IsInRole(CNT.Admin))
             {
-                <a id="btnAdminPanelOpen" class="btnAdminPanel" data-bs-toggle="offcanvas" data-bs-target="#adminPanel" aria-controls="adminPanel">
-                    <i class="fa-solid fa-pencil text-white"></i>
-                </a>
-
-                <div id="adminPanel" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="adminPanelLabel">
-                    <div class="offcanvas-header bg-light">
-                        <h4 class="offcanvas-title" id="adminPanelLabel">
-                            <i class="fa-solid fa-palette"></i> Administration
-                        </h4>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="PageClass" asp-action="Index">Pages</a>
-                        @*<a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Blocks" asp-action="Index">Blocks</a>*@
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Headers" asp-action="Index">Headers</a>
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Categories" asp-action="Index">Categories</a>
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Articles" asp-action="Index">Articles</a>
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Sliders" asp-action="Index">Sliders</a>
-                        <a class="btn btn-outline-secondary w-100 mb-2" asp-area="Admin" asp-controller="Users" asp-action="Index">Users</a>
-                    </div>
-
-                    <a id="btnAdminPanelClose" class="btnAdminPanel" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <i class="fa-solid fa-pencil text-white"></i>
-                    </a>
-                </div>
-                
+                <partial name="_AdminPanelPartial" />
             }
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted position-relative">
         <div class="container">
             &copy; 2023 - KleyTech - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
@@ -117,14 +98,54 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="https://kit.fontawesome.com/0f48d8c00d.js" crossorigin="anonymous"></script>
 
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function () {
+                hamburger_cross();
+            });
+
+            function hamburger_cross() {
+
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+
+            $('[data-toggle="offcanvas"]').click(function () {
+
+                if ($('#wrapper').hasClass("toggled")) {
+                    //$('.hamburger').css({ 'animation': 'none' });
+                    $('.hamburger').css({ 'left': '30px' });
+                }else{
+                    //$('.hamburger').css({ 'animation': 'animateHamburguer 1s forward' });
+                    $('.hamburger').css({ 'left': '230px' });
+                }
+
+                $('#wrapper').toggleClass('toggled');
+                
+            });
+        });
+
+    </script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
-@*@section Scripts{
-    <script type="text/javascript">
-        
-
-    </script>
-}*@
