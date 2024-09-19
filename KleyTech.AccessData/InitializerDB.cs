@@ -4,11 +4,6 @@ using KleyTech.Models;
 using KleyTech.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KleyTech.DataAccess
 {
@@ -51,10 +46,10 @@ namespace KleyTech.DataAccess
             },"Kleyton200.").GetAwaiter().GetResult();
 
             //Creating user - roles rel
-            ApplicationUser user = _db.ApplicationUser
-                .Where(u => u.Email == "kleyton@hotmail.es")
-                .FirstOrDefault();
-            _userManager.AddToRoleAsync(user,CNT.Admin).GetAwaiter().GetResult();
+            ApplicationUser user = _db.ApplicationUser.FirstOrDefault(u => u.Email == "kleyton@hotmail.es");
+            
+            if (user != null)
+                _userManager.AddToRoleAsync(user, CNT.Admin).GetAwaiter().GetResult();
 
         }
     }

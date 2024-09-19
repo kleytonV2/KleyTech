@@ -23,9 +23,15 @@ namespace KleyTech.Areas.Admin.Controllers
         public IActionResult Index()
         {
             //return View(_workContainer.User.GetAll());
-            var claimsIdentity = (ClaimsIdentity)this.User.Identity;
+            ClaimsIdentity? claimsIdentity = User?.Identity as ClaimsIdentity;
+            if (claimsIdentity == null)
+                return View(_workContainer.User.GetAll());
+
             var actualUser = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            return View(_workContainer.User.GetAll(u=>u.Id != actualUser.Value));
+            if (actualUser == null)
+                return View(_workContainer.User.GetAll());
+
+            return View(_workContainer.User.GetAll(u => u.Id != actualUser.Value));
         }
         
         [HttpGet]

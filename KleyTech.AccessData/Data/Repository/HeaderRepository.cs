@@ -1,13 +1,6 @@
 ﻿using KleyTech.Data;
 using KleyTech.DataAccess.Data.Repository.IRepository;
 using KleyTech.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
 
 namespace KleyTech.DataAccess.Data.Repository
 {
@@ -22,9 +15,12 @@ namespace KleyTech.DataAccess.Data.Repository
         public void Update(Header header)
         {
             var dbObject = _db.Headers.FirstOrDefault(i => i.Id == header.Id);
-            dbObject.Name = header.Name;
-            dbObject.LogoURL = header.LogoURL;
-            dbObject.HTML_Id = header.HTML_Id;
+            if (dbObject is not null)
+            {
+                dbObject.Name = header.Name;
+                dbObject.LogoURL = header.LogoURL;
+                dbObject.HTML_Id = header.HTML_Id;
+            }
 
             //_db.SaveChanges();
         }
