@@ -2,12 +2,6 @@
 using KleyTech.DataAccess.Data.Repository.IRepository;
 using KleyTech.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KleyTech.DataAccess.Data.Repository
 {
@@ -30,10 +24,13 @@ namespace KleyTech.DataAccess.Data.Repository
         public void Update(Category category)
         {
             var dbObject = _db.Categories.FirstOrDefault(i => i.Id == category.Id);
-            dbObject.Name = category.Name;
-            dbObject.Order = category.Order;
+            if (dbObject is not null)
+            {
+                dbObject.Name = category.Name;
+                dbObject.Order = category.Order;
 
-            _db.SaveChanges();
+                _db.SaveChanges();
+            }
         }
     }
 }

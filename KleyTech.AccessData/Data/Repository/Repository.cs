@@ -1,11 +1,6 @@
 ﻿using KleyTech.DataAccess.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KleyTech.DataAccess.Data.Repository
 {
@@ -25,7 +20,7 @@ namespace KleyTech.DataAccess.Data.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(int id)
+        public T? Get(int id)
         {
             return dbSet.Find(id);
         }
@@ -51,7 +46,7 @@ namespace KleyTech.DataAccess.Data.Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
+        public T? GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)
@@ -73,7 +68,7 @@ namespace KleyTech.DataAccess.Data.Repository
 
         public void Remove(int id)
         {
-            T entityToRemove = dbSet.Find(id);
+            _ = dbSet.Find(id);
         }
 
         public void Remove(T entity)

@@ -1,13 +1,6 @@
 ﻿using KleyTech.Data;
 using KleyTech.DataAccess.Data.Repository.IRepository;
 using KleyTech.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
 
 namespace KleyTech.DataAccess.Data.Repository
 {
@@ -22,9 +15,12 @@ namespace KleyTech.DataAccess.Data.Repository
         public void Update(Slider slider)
         {
             var dbObject = _db.Sliders.FirstOrDefault(i => i.Id == slider.Id);
-            dbObject.Name = slider.Name;
-            dbObject.ImageUrl = slider.ImageUrl;
-            dbObject.Status = slider.Status;
+            if (dbObject is not null)
+            {
+                dbObject.Name = slider.Name;
+                dbObject.ImageUrl = slider.ImageUrl;
+                dbObject.Status = slider.Status;
+            }
 
             //_db.SaveChanges();
         }

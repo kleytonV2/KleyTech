@@ -7,11 +7,8 @@ namespace KleyTech.Models
     {
         [Required(ErrorMessage = "The Name is required")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "The Direction is required")]
-        public string Address { get; set; }
-        [Required(ErrorMessage = "The City is required")]
-        public string City { get; set; }
-        [Required(ErrorMessage = "The Country is required")]
-        public string Country { get; set; }
+        public string? Address { get; set; }
+        public string? City { get; set; }
+        public string? Country { get; set; }
     }
 }

@@ -1,0 +1,13 @@
+C:\PersonalProject\KleyTech\KleyTech.Models\bin\Debug\net8.0\KleyTech.Models.deps.json
+C:\PersonalProject\KleyTech\KleyTech.Models\bin\Debug\net8.0\KleyTech.Models.dll
+C:\PersonalProject\KleyTech\KleyTech.Models\bin\Debug\net8.0\KleyTech.Models.pdb
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.csproj.AssemblyReference.cache
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.AssemblyInfoInputs.cache
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.AssemblyInfo.cs
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.csproj.CoreCompileInputs.cache
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.sourcelink.json
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.dll
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\refint\KleyTech.Models.dll
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\KleyTech.Models.pdb
+C:\PersonalProject\KleyTech\KleyTech.Models\obj\Debug\net8.0\ref\KleyTech.Models.dll
