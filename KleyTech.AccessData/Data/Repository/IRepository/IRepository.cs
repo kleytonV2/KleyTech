@@ -9,7 +9,7 @@ namespace KleyTech.DataAccess.Data.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        T Get (int id);
+        T? Get (int id);
         IEnumerable<T> GetAll (
         
             Expression<Func<T,bool>> filter = null,
@@ -18,7 +18,7 @@ namespace KleyTech.DataAccess.Data.Repository.IRepository
             
         );
 
-        T GetFirstOrDefault(
+        T? GetFirstOrDefault(
 
             Expression<Func<T, bool>> filter = null,
             String includeProperties = null

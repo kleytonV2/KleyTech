@@ -1,11 +1,5 @@
 ﻿using KleyTech.Data;
 using KleyTech.DataAccess.Data.Repository.IRepository;
-using KleyTech.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KleyTech.DataAccess.Data.Repository
 {
